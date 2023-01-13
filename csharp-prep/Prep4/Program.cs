@@ -12,7 +12,7 @@ class Program
         int sum = 0;
         int max = 0;
         int count = 0;
-        int avg = 0;
+        double avg = 0.0;
 
         //Get list items from user
         do{
