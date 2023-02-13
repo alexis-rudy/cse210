@@ -1,4 +1,6 @@
-public class Journal{
+using System;
+public class Journal
+{
     
     public string writeJournalEntry(){
         Console.WriteLine("> ");
