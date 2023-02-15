@@ -4,6 +4,8 @@ using System.Collections.Generic;
 public class Scripture
 {
     private List<Word> _words = new List<Word>();
+    private List<Word> visibleWords;
+
 
     public Scripture(string wholeText)
     {
@@ -18,7 +20,7 @@ public class Scripture
 
     public void RandomlyHideWord()
     {
-        List<Word> visibleWords = GetVisibleWords();
+        visibleWords = GetVisibleWords();
         Random random = new Random();
         int index  = random.Next(0, visibleWords.Count - 1);
         Word word = visibleWords[index];
@@ -32,6 +34,15 @@ public class Scripture
             word.Show();
         }
     }
+
+    public bool CheckAllWordsVisible()
+    {
+        if (visibleWords.Count == _words.Count)
+        {
+            return true;
+        }
+        
+        return false;
 
     public override string ToString()
     {
