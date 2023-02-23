@@ -12,5 +12,6 @@ public class Prompt{
     public string getRandomPrompt()
     {
         string prompt = _prompts[getRandomNumber()];
+        return prompt;
     }
 }
