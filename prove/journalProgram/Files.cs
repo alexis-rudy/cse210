@@ -12,14 +12,12 @@ public class Files{
     }
 
     public void openFile(string file){
-        try
-        {
-            openFile(file);
-            
-        }catch (FileNotFoundException){
-            Console.WriteLine($"{file} not found.");
-            Console.WriteLine("Creating new file...");
-            using (StreamWriter newfile = File.CreateText(file));
-        }
-    }
+        File.Open(file, FileMode.OpenOrCreate);
+    }          
+
+    public void closeFile(string file)
+    {
+        
+    }     
+          
 }
