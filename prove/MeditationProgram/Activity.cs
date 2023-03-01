@@ -1,6 +1,5 @@
 using System;
-namespace Develop04
-{
+
     public class Activity
     {
         private string _activityName;
@@ -11,17 +10,8 @@ namespace Develop04
         private string _endMessage;
 
         // Constructor
-        public Activity(string name, string description)
-        {
-            _activityName = name;
-            _activityDescription = description;
-        }
 
-        public string GetStartMessage()
-        {
-            return _startMessage;
-        }
-        public void SetStartMessage(string message)
+        public void GetStartMessage(string message)
         {
             _startMessage = message;
         }
@@ -31,18 +21,16 @@ namespace Develop04
             _activityDuration = activityDuration;
             return activityDuration;
         }
-        public void ActivityStart(){
-            Console.WriteLine(_startMessage);
+        public void GetActivityDescription(string description){
+            _activityDescription = description;
         }
-        public void ActivityEnd(){
-
+        public void printStartMessage(string activity, string activityDescription){
+            Console.WriteLine($"Welcome to the {activity} activity.");
+            Console.WriteLine(activityDescription);
+            GetActivityDuration();
         }
-        public void PauseActivity(){
-
+        public void printEndMessage(string activity){
+            Console.WriteLine($"You have completed the {activity} activity.");
         }
-        public bool IsPaused(){
-
-        }
-
     }
-}
+

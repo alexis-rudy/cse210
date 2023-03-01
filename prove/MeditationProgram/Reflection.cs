@@ -1,3 +1,3 @@
-public class Activity:Reflection{
-    
+public class Reflection : Activity{
+
 }
