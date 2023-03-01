@@ -27,7 +27,9 @@ namespace Develop04
         }
         public int GetActivityDuration(){
             Console.WriteLine("How long do you want to do the activity for? ");
-            _activityDuration = int(Console.ReadLine);
+            int activityDuration = Convert.ToInt32(Console.ReadLine());
+            _activityDuration = activityDuration;
+            return activityDuration;
         }
         public void ActivityStart(){
             Console.WriteLine(_startMessage);
