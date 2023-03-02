@@ -16,7 +16,7 @@ class Program
         if (choice == 1){
             // beginning message
             Breathing breathing = new Breathing();
-            breathing.printStartMessage("breathing", "this is a description");
+            breathing.printStartMessage("breathing", "this is a description for the breathing class");
             // start activity
 
             //end message
@@ -24,14 +24,16 @@ class Program
         }
         if (choice == 2){
             // beginning message
-
+            Reflection reflect = new Reflection();
+            reflect.printStartMessage("reflection", "this is the description for the reflection class")
             // start activity
 
             //end message
         }
         if (choice == 3){
             // beginning message
-
+            Listing list = new Listing();
+            list.GetStartMessage("listing", "this is the description for the listing class")
             // start activity
 
             //end message

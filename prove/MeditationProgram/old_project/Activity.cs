@@ -1,5 +1,5 @@
 using System;
-
+    // The resonsibility of an activity is to control the progress of meditation
     public class Activity
     {
         private string _activityName;
@@ -8,9 +8,6 @@ using System;
         private bool _pause = false;
         private string _startMessage;
         private string _endMessage;
-
-        // Constructor
-
         public void GetStartMessage(string message)
         {
             _startMessage = message;
@@ -24,13 +21,20 @@ using System;
         public void GetActivityDescription(string description){
             _activityDescription = description;
         }
-        public void printStartMessage(string activity, string activityDescription){
+        public void StartMedatation(string activity, string activityDescription){
             Console.WriteLine($"Welcome to the {activity} activity.");
             Console.WriteLine(activityDescription);
             GetActivityDuration();
         }
-        public void printEndMessage(string activity){
+        public void EndMedataiton(string activity){
             Console.WriteLine($"You have completed the {activity} activity.");
+        }
+        public void GetAnimation(){
+            PauseFiveSeconds();
+            Console.Write("\b \b");
+        }
+        public void PauseFiveSeconds(){
+            Thread.Sleep(5000);
         }
     }
 
