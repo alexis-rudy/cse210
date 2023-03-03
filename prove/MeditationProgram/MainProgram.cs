@@ -13,13 +13,22 @@ class MainProgram
 
         while (choice != 4){
             if (choice == 1){
-
+                BreathSpecialist breathe = new BreathSpecialist();
+                breathe.GetActivityName("Breathing");
+                breathe.WelcomeWithStartMessage();
+                breathe.GiveDescriptionOfBreathing();
             }
             else if (choice == 2){
-
+                ReflectionSpecialist reflect = new ReflectionSpecialist();
+                reflect.GetActivityName("Reflecting");
+                reflect.WelcomeWithStartMessage();
+                reflect.GiveReflectionDescription();
             }
             else if (choice == 3){
-
+                ListingSpecialist listing = new ListingSpecialist();
+                listing.GetActivityName("Listing");
+                listing.WelcomeWithStartMessage();
+                listing.GiveListingDescription();
             }
         }
         Console.WriteLine("Have a great day.");
