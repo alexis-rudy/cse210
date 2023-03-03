@@ -1,8 +1,9 @@
 // Give instructions specific to the breathing activity
 
-public class BreathSpecialist{
+public class BreathSpecialist : ActivityLeader{
     string _breathin = "Breath in...";
     string _breathout = "Breath out...";
+    string _description;
 
     public void GiveDescriptionOfBreathing(){
     
