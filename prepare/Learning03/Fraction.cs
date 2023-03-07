@@ -1,6 +1,8 @@
 using System;
+// ASK ABOUT GETTERS AND SETTERS
 
 // The purpose of the Fraction class is to hold information about a fraction.
+
 public class Fraction{
     private int _topNum;
     private int _botNum;
