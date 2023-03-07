@@ -14,11 +14,13 @@ class Program
         Fraction fraction2 = new Fraction(3, 4);
 
         // Trying getters and setters
-        Console.WriteLine(fraction.GetTopNumber());
-        Console.WriteLine(fraction1.GetTopNumber());
-        Console.WriteLine(fraction2.GetTopNumber());
-        Console.WriteLine(fraction1.SetTopNumber(5));
-        
+        // Console.WriteLine(fraction.GetTopNumber());
+        // Console.WriteLine(fraction1.GetTopNumber());
+        // Console.WriteLine(fraction2.GetTopNumber());
+        // Console.WriteLine(fraction1.SetTopNumber(3));
+        // Console.WriteLine(fraction2.SetTopNumber(3));
 
+        // Running the methods
+        Console.WriteLine(fraction.GetFractionView());
     }
 }

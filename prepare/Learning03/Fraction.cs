@@ -19,26 +19,26 @@ public class Fraction{
         _botNum = bottom;
     }
 
-    // Getters and Setters 
-    public int GetTopNumber(){
-        return _topNum;
-    }
-    public int GetBotNumber(){
-        return _botNum;
-    }
-    public void SetTopNumber(int topNum){
-        _topNum = topNum;
-    }
-    public void SetBotNumber(int botNum){
-        _botNum = botNum;
-    }
+    // // Getters and Setters 
+    // public int GetTopNumber(){
+    //     return _topNum;
+    // }
+    // public int GetBotNumber(){
+    //     return _botNum;
+    // }
+    // public void SetTopNumber(int topNum){
+    //     _topNum = topNum;
+    // }
+    // public void SetBotNumber(int botNum){
+    //     _botNum = botNum;
+    // }
 
     // Methods
-    public string GetFractionView(int top, int bot){
-        string fraction = $"{top} \n - {bot}";
+    public string GetFractionView(){
+        string fraction = $"{_topNum}/{_botNum}";
         return fraction;
     }
-    public double GetDecimalView(int top, int bot){
-        return top/bot;
+    public double GetDecimalView(){
+        return _topNum/_botNum;
     }
 }
