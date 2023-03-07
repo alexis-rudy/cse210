@@ -22,5 +22,10 @@ class Program
 
         // Running the methods
         Console.WriteLine(fraction.GetFractionView());
+        Console.WriteLine(fraction1.GetFractionView());
+        Console.WriteLine(fraction2.GetFractionView());
+        Console.WriteLine(fraction.GetDecimalView());
+        Console.WriteLine(fraction1.GetDecimalView());
+        Console.WriteLine(fraction2.GetDecimalView());
     }
 }

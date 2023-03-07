@@ -41,6 +41,6 @@ public class Fraction{
         return fraction;
     }
     public double GetDecimalView(){
-        return _topNum/_botNum;
+        return (double)_topNum/(double)_botNum;
     }
 }
