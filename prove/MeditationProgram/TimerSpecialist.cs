@@ -2,8 +2,12 @@ using System;
 using System.Collections.Generic;
 public class TimerSpecialist{
     // The responsibility of the TimerSpecialist class is to control the time settings.
+
     private int _duration;
     private List<string> _spinnerLines = new List<string>();
+ 
+
+    TimerSpecialist(){
     _spinnerLines.Add("|");
     _spinnerLines.Add("/");
     _spinnerLines.Add("-");
@@ -12,6 +16,7 @@ public class TimerSpecialist{
     _spinnerLines.Add("/");
     _spinnerLines.Add("|");
     _spinnerLines.Add("\\");
+    }
 
     public void AskForDuration(){
         Console.WriteLine("How many seconds would you like to do this activity for?");
@@ -23,9 +28,9 @@ public class TimerSpecialist{
         DateTime futureTime = startTime.AddSeconds(_duration);
 
         // Pause
-        int time = Convert.ChangeType(startTime.Second, int);
-        while (time < futureTime){
-            if (time % 3 == 0){
+
+        for (DateTime i = startTime; i <= futureTime; i.AddSeconds(1)){
+            if (i % 3 == 0){
                 Thread.Sleep(ConvertToMilliseconds(5));
                 addAnimation(5);
             }
