@@ -7,9 +7,9 @@ public class Database{
     {
         database.Add(dateKey, text);
     }
-    public string findItem(string date)
-    {
-        
-    }
+    // public string findItem(string date)
+    // {
+    //     datebase.
+    // }
     
 }
