@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Learning05 World!");
+
+        Square squire = new Square(squire.GetColor());
     }
 }
