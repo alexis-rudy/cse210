@@ -43,7 +43,7 @@ public class Scripture
         }
         
         return false;
-
+    }
     public override string ToString()
     {
         string wholeText = "";

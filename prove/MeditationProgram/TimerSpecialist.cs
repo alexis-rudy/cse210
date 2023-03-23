@@ -28,7 +28,8 @@ public class TimerSpecialist{
         DateTime futureTime = startTime.AddSeconds(_duration);
 
         // Pause
-
+        // change to a while loop
+        // Make the console sleep instead of doing the calculation
         for (DateTime i = startTime; i <= futureTime; i.AddSeconds(1)){
             if (i % 3 == 0){
                 Thread.Sleep(ConvertToMilliseconds(5));

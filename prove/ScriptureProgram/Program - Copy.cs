@@ -12,8 +12,8 @@ public class Program
         {
             multiple = false;
         }
-        Reference reference;
-        scripture = reference.giveReference(multiple);
+        Reference reference = new Reference();
+        scripture = new Scripture(reference.giveReference(multiple));
 
         string choice = "";
         while(choice != "quit")
