@@ -20,6 +20,9 @@ class MainProgram
                 breathe.WelcomeWithStartMessage();
                 breathe.GiveDescriptionOfBreathing();
                 timer.AskForDuration();
+                timer.Timer();
+                ActivityLeader activityLeader = new ActivityLeader();
+                activityLeader.StopWithEndMessage();
             }
             else if (choice == 2){
                 ReflectionSpecialist reflect = new ReflectionSpecialist();
@@ -28,6 +31,9 @@ class MainProgram
                 reflect.GiveReflectionDescription();
                 timer.AskForDuration();
                 reflect.GiveRandomPrompt();
+                timer.Timer();
+                ActivityLeader activityLeader = new ActivityLeader();
+                activityLeader.StopWithEndMessage();
             }
             else if (choice == 3){
                 ListingSpecialist listing = new ListingSpecialist();
@@ -35,6 +41,9 @@ class MainProgram
                 timer.AskForDuration();
                 listing.WelcomeWithStartMessage();
                 listing.GiveListingDescription();
+                timer.Timer();
+                ActivityLeader activityLeader = new ActivityLeader();
+                activityLeader.StopWithEndMessage();
             }
         }
         Console.WriteLine("Have a great day!");

@@ -30,11 +30,9 @@ public class TimerSpecialist{
         // Pause
         // change to a while loop
         // Make the console sleep instead of doing the calculation
-        for (DateTime i = startTime; i <= futureTime; i.AddSeconds(1)){
-            if (i % 3 == 0){
-                Thread.Sleep(ConvertToMilliseconds(5));
-                addAnimation(5);
-            }
+        while(DateTime.Now < futureTime){
+            Thread.Sleep(ConvertToMilliseconds(5));
+            addAnimation(5);
         }
 
         // End the timer
