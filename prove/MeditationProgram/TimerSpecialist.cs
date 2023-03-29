@@ -7,7 +7,7 @@ public class TimerSpecialist{
     private List<string> _spinnerLines = new List<string>();
  
 
-    TimerSpecialist(){
+    public TimerSpecialist(){
     _spinnerLines.Add("|");
     _spinnerLines.Add("/");
     _spinnerLines.Add("-");
@@ -31,7 +31,7 @@ public class TimerSpecialist{
         // change to a while loop
         // Make the console sleep instead of doing the calculation
         while(DateTime.Now < futureTime){
-            Thread.Sleep(ConvertToMilliseconds(5));
+            Thread.Sleep(ConvertToMilliseconds(1));
             addAnimation(5);
         }
 
