@@ -18,7 +18,7 @@ public class BreathSpecialist : ActivityLeader{
     }
     private void AddPeriodsToBreathe(){
         for (int i = 5; i > 0; i--){
-            Console.Write(".");
+            Console.WriteLine(".");
             Thread.Sleep(1000);
         }
     }

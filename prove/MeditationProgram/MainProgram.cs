@@ -24,8 +24,8 @@ class MainProgram
                 breathe.GiveDescriptionOfBreathing();
                 timer.AskForDuration();
                 breathe.TellGroupToBreathIn();
-                breathe.TellGroupToBreathOut();
                 timer.Timer();
+                breathe.TellGroupToBreathOut();
                 ActivityLeader activityLeader = new ActivityLeader();
                 activityLeader.StopWithEndMessage();
             }
