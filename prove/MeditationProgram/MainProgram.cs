@@ -46,6 +46,7 @@ class MainProgram
                 timer.AskForDuration();
                 listing.WelcomeWithStartMessage();
                 listing.GiveListingDescription();
+                listing.GiveRandomQuestion();
                 timer.Timer();
                 ActivityLeader activityLeader = new ActivityLeader();
                 activityLeader.StopWithEndMessage();
