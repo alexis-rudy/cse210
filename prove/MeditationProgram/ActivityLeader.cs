@@ -4,8 +4,9 @@ public class ActivityLeader{
     private string _endMessage;
     private string _activityName;
 
-    public string GetActivityName(){
-        return _activityName;
+    public string GetActivityName(string activityName){
+        _activityName = activityName;
+        return activityName;
     }
     public void WelcomeWithStartMessage(){
         _startMessage = $"Welcome to the {_activityName} Activity.";
