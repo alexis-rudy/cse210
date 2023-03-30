@@ -14,7 +14,8 @@ public class Program{
         if (userChoice == 1){
             // Get a prompt for the user to respond to.
             Prompt prompt = new Prompt();
-            prompt.getRandomPrompt();
+            string userPrompt = prompt.getRandomPrompt();
+            Console.WriteLine($"{userPrompt}");
             // Create an entry to save from the user's response. 
             Entry entry = new Entry();
             string latestEntry = entry.getEntryFromUser();
