@@ -42,5 +42,15 @@ namespace GoalSetter
         {
             return "a\tAdds a new goal to the list of goals.\n";
         }
+        public override void SetWaterGoal(){
+            string name = "Drink Water";
+            string description = "Drink a glass of water.";
+            int points = 2;
+
+            Goal goal = new Goal(name, description, points);
+
+            _repository.Add(goal);
+            _terminal.WriteLine("Your goal was added to the list.\n");
+        }
     }
 }
