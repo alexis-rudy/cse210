@@ -10,22 +10,23 @@ public class Load{
         entryList = _allEntries;
         return entryList;
     }
-    public void getEntries(Dictionary<string, string> database)
-    {
-        foreach (var item in database.Values)
-        {
-            _allEntries.Add(item);
-        }
-    }
+    // public void getEntries(Dictionary<string, string> database)
+    // {
+    //     foreach (var item in database.Values)
+    //     {
+    //         _allEntries.Add(item);
+    //     }
+    // }\
     public void addToList(string entry){
         // Add the entry to the list of all entries. 
-        Console.WriteLine(entry);
+        // Console.WriteLine(entry);
         _allEntries.Add(entry);
-        Console.WriteLine(_allEntries);
+        // Console.WriteLine(_allEntries);
     }
 
     public void showListContents(){
-        foreach (var item in _allEntries){
+        foreach (string item in _allEntries){
+            Console.WriteLine(_allEntries);
             Console.WriteLine(item);
         }
     }

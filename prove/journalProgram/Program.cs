@@ -12,13 +12,6 @@ public class Program{
         int userChoice = Convert.ToInt16(Console.ReadLine());
 
         do{
-        Console.WriteLine("Please select one of the following choices: ");
-        Console.WriteLine("1. Write");
-        Console.WriteLine("2. Display");
-        Console.WriteLine("3. Load");
-        Console.WriteLine("4. Save");
-        Console.WriteLine("5. Quit");
-
         if (userChoice == 1){
             // Get a prompt for the user to respond to.
             Prompt prompt = new Prompt();
@@ -35,7 +28,7 @@ public class Program{
         }
         else if (userChoice == 2){
             Load loader = new Load();
-            loader.showListContents();
+            Console.WriteLine(loader.showListContents());
         }
         else if (userChoice == 3){
             Files file = new Files();
@@ -49,6 +42,15 @@ public class Program{
             string filename = file.getFileName();
             file.writeToFile(filename);
         }
+        Console.WriteLine("Please select one of the following choices: ");
+        Console.WriteLine("1. Write");
+        Console.WriteLine("2. Display");
+        Console.WriteLine("3. Load");
+        Console.WriteLine("4. Save");
+        Console.WriteLine("5. Quit");
+        userChoice = Convert.ToInt16(Console.ReadLine());
+
         }while(userChoice != 5);
+        Console.WriteLine("Thanks for writing!");
     }
 }
