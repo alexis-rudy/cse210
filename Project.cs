@@ -48,11 +48,11 @@ public class Project{
     }
 
     // Calculation methods
-    public DateTime calculateActualTime(){
+    public TimeSpan calculateActualTime(){
         // Convert to DateTime before calculation.
         DateTime startDate = convert.convertDate(_startDate);
         DateTime actualEndDate = convert.convertDate(_actualEndDate);
-        DateTime actualTime = startDate - actualEndDate;
+        TimeSpan actualTime = startDate - actualEndDate;
         return actualTime;
     }
     public virtual double calculateProjectCost(){
