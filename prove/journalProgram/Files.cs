@@ -20,11 +20,15 @@ public class Files{
         }
         using (StreamWriter outputFile = new StreamWriter(filename))
         {
+            if (sessionEntries.Count == 0){
+                Console.WriteLine("You need to load the entries before you can save them.");
+            }
             // You can add text to the file with the WriteLine method
             foreach (string e in entriesListForFile){
                 outputFile.WriteLine(e);
             }
         }
+        Console.WriteLine("Entries saved.");
     }
     public void openFile(string file){
         File.Open(file, FileMode.OpenOrCreate);

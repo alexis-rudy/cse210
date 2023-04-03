@@ -3,6 +3,7 @@ using System;
 public class Program{
     static void Main(string[] args)
     {
+        Load loader = new Load();
         Console.WriteLine("Please select one of the following choices: ");
         Console.WriteLine("1. Write");
         Console.WriteLine("2. Display");
@@ -23,18 +24,18 @@ public class Program{
             entry.getEntryFromUser(userEntry);
             // Console.WriteLine(userEntry);
             // Add the entry to a list for the user to load later. 
-            Load loader = new Load();
+            // Load loader = new Load();
             loader.addToList(userEntry);
         }
         else if (userChoice == 2){
-            Load loader = new Load();
-            Console.WriteLine(loader.showListContents());
+            
+            loader.showListContents();
         }
         else if (userChoice == 3){
             Files file = new Files();
             file.getFileName();
             string filename = Console.ReadLine();
-            Load loader = new Load();
+            // Load loader = new Load();
             loader.getEntryList();
         }
         else if (userChoice == 4){

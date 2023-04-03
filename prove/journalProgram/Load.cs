@@ -25,9 +25,9 @@ public class Load{
     }
 
     public void showListContents(){
+        int count = 1;
         foreach (string item in _allEntries){
-            Console.WriteLine(_allEntries);
-            Console.WriteLine(item);
+            Console.WriteLine($"{count}. {item}");
         }
     }
     // private void limitToFive()       limits the number of displayed entries to five so the user isn't overwhelmed.
