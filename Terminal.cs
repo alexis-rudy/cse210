@@ -6,8 +6,8 @@ public class Terminal{
         number = int.Parse(Console.ReadLine());
         return number;
     }
-    public int ReadInt(int number){
-        number = int.Parse(Console.ReadLine());
+    public int ReadInt(){
+        int number = int.Parse(Console.ReadLine());
         return number;
     }
     public string ReadDate(){
@@ -26,6 +26,7 @@ public class Terminal{
         Console.WriteLine("(1) View current projects");
         Console.WriteLine("(2) Add new project");
         Console.WriteLine("(3) Delete project");
+        Console.Write("> ");
     }
     public void WriteMessage(string message){
         Console.WriteLine(message);

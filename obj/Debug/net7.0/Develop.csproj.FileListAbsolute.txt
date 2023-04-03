@@ -3,3 +3,13 @@ C:\Users\Admin\OneDrive\Programming with Classes\project\obj\Debug\net7.0\Develo
 C:\Users\Admin\OneDrive\Programming with Classes\project\obj\Debug\net7.0\Develop.AssemblyInfoInputs.cache
 C:\Users\Admin\OneDrive\Programming with Classes\project\obj\Debug\net7.0\Develop.AssemblyInfo.cs
 C:\Users\Admin\OneDrive\Programming with Classes\project\obj\Debug\net7.0\Develop.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Programming with Classes\project\bin\Debug\net7.0\Develop.exe
+C:\Users\Admin\OneDrive\Programming with Classes\project\bin\Debug\net7.0\Develop.deps.json
+C:\Users\Admin\OneDrive\Programming with Classes\project\bin\Debug\net7.0\Develop.runtimeconfig.json
+C:\Users\Admin\OneDrive\Programming with Classes\project\bin\Debug\net7.0\Develop.dll
+C:\Users\Admin\OneDrive\Programming with Classes\project\bin\Debug\net7.0\Develop.pdb
+C:\Users\Admin\OneDrive\Programming with Classes\project\obj\Debug\net7.0\Develop.dll
+C:\Users\Admin\OneDrive\Programming with Classes\project\obj\Debug\net7.0\refint\Develop.dll
+C:\Users\Admin\OneDrive\Programming with Classes\project\obj\Debug\net7.0\Develop.pdb
+C:\Users\Admin\OneDrive\Programming with Classes\project\obj\Debug\net7.0\Develop.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Programming with Classes\project\obj\Debug\net7.0\ref\Develop.dll
