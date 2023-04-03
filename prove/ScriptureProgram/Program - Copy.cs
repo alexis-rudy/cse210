@@ -8,7 +8,7 @@ public class Program
         Console.WriteLine("Do you want one verse or multiple?");
         string doesUserWantMultipleVerses = Console.ReadLine();
         bool multiple = true;
-        if (doesUserWantMultipleVerses.ToLower() == "no")
+        if (doesUserWantMultipleVerses.ToLower() == "one")
         {
             multiple = false;
         }

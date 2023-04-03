@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Scripture
 {
     private List<Word> _words = new List<Word>();
-    private List<Word> visibleWords;
+    private List<Word> visibleWords = new List<Word>();
 
 
     public Scripture(string wholeText)
