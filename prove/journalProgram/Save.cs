@@ -3,6 +3,10 @@ public class Save{
     private string _content;
     private string _filename;
 
+    public void SetContent(string content){
+        _content = content;
+    }
+
     public void saveToFile()
     {
         using (StreamWriter outputFile = new StreamWriter(_filename))

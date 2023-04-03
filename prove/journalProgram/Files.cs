@@ -13,11 +13,17 @@ public class Files{
         return _filename;        
     }
     public void writeToFile(string filename){
-        List<string> entriesListForFile = loader.getEntryList();
+        List<string> sessionEntries = loader.getEntryList();
+        List<string> entriesListForFile = new List<string>();
+        foreach (string entry in sessionEntries){
+            entriesListForFile.Add(entry);
+        }
         using (StreamWriter outputFile = new StreamWriter(filename))
         {
             // You can add text to the file with the WriteLine method
-            outputFile.WriteLine(entriesListForFile);
+            foreach (string e in entriesListForFile){
+                outputFile.WriteLine(e);
+            }
         }
     }
     public void openFile(string file){

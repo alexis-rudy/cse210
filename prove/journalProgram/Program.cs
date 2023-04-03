@@ -9,8 +9,16 @@ public class Program{
         Console.WriteLine("3. Load");
         Console.WriteLine("4. Save");
         Console.WriteLine("5. Quit");
-
         int userChoice = Convert.ToInt16(Console.ReadLine());
+
+        do{
+        Console.WriteLine("Please select one of the following choices: ");
+        Console.WriteLine("1. Write");
+        Console.WriteLine("2. Display");
+        Console.WriteLine("3. Load");
+        Console.WriteLine("4. Save");
+        Console.WriteLine("5. Quit");
+
         if (userChoice == 1){
             // Get a prompt for the user to respond to.
             Prompt prompt = new Prompt();
@@ -36,5 +44,11 @@ public class Program{
             Load loader = new Load();
             loader.getEntryList();
         }
+        else if (userChoice == 4){
+            Files file = new Files();
+            string filename = file.getFileName();
+            file.writeToFile(filename);
+        }
+        }while(userChoice != 5);
     }
 }
