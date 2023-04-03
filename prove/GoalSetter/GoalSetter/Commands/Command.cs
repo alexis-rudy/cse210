@@ -18,5 +18,8 @@ namespace GoalSetter
         {
             throw new Exception("GetHelp not implemented in base class.");
         }
+        public virtual void SetWaterGoal(){
+            throw new Exception("WaterGoal not implemented in base class.");
+        }
     }
 }
