@@ -18,10 +18,12 @@ public class Program{
             Console.WriteLine($"{userPrompt}");
             // Create an entry to save from the user's response. 
             Entry entry = new Entry();
-            string latestEntry = entry.getEntryFromUser();
+            string userEntry = Console.ReadLine();
+            entry.getEntryFromUser(userEntry);
+            // Console.WriteLine(userEntry);
             // Add the entry to a list for the user to load later. 
             Load loader = new Load();
-            loader.addToList(latestEntry);
+            loader.addToList(userEntry);
         }
         else if (userChoice == 2){
             Load loader = new Load();

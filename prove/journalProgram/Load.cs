@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 
 public class Load{
-    private List<string> _allEntries;
+    private List<string> _allEntries = new List<string>();
     // private Dictionary<string, string> database;
 
     public List<string> getEntryList(){
-        List<string> entryList;
+        List<string> entryList = new List<string>();
         entryList = _allEntries;
         return entryList;
     }
@@ -19,7 +19,9 @@ public class Load{
     }
     public void addToList(string entry){
         // Add the entry to the list of all entries. 
+        Console.WriteLine(entry);
         _allEntries.Add(entry);
+        Console.WriteLine(_allEntries);
     }
 
     public void showListContents(){

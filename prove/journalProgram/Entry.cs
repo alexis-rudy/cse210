@@ -9,9 +9,9 @@ public class Entry{
         string _date = currentTime.ToShortDateString();
     }
 
-    public string getEntryFromUser()
+    public string getEntryFromUser(string entry)
     {
-        string entry = Console.ReadLine();
+        // string entry = Console.ReadLine();
         _entry = entry;
         return entry;
     }
