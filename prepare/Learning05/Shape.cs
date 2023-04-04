@@ -1,5 +1,5 @@
 public class Shape{
-    public string _color;
+    private string _color = "brown";
 
     public Shape(string color){
         color = _color;

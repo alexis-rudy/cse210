@@ -4,7 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-
-        Square squire = new Square(squire.GetColor());
+        Square square = new Square("Orange", 3);
+        Console.WriteLine(square.GetColor());
+        Console.WriteLine(square.GetArea());
     }
 }
