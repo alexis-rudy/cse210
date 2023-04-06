@@ -22,18 +22,22 @@ public class CreateNewProject : Commands{
             if (type == "Programming"){
             Programming project = new Programming(description);
             bin.AddToList(project);
+            terminal.WriteMessage("Project added.");
         }else if (type == "Sewing"){
             Sewing project = new Sewing();
             bin.AddToList(project);
+            terminal.WriteMessage("Project added.");
         }
         }
         else if (startDate == "" && endDate == ""){
             if (type == "Programming"){
             Programming project = new Programming(name, description);
             bin.AddToList(project);
+            terminal.WriteMessage("Project added.");
         }else if (type == "Sewing"){
             Sewing project = new Sewing(name, description);
             bin.AddToList(project);
+            terminal.WriteMessage("Project added.");
         }
         }
         else if (name == ""){
@@ -41,9 +45,11 @@ public class CreateNewProject : Commands{
             if (type == "Programming"){
             Programming project = new Programming(description, newStartDate, newEndDate);
             bin.AddToList(project);
+            terminal.WriteMessage("Project added.");
         }else if (type == "Sewing"){
             Sewing project = new Sewing(description, newStartDate, newEndDate);
             bin.AddToList(project);
+            terminal.WriteMessage("Project added.");
         }
         }
         else{
@@ -51,9 +57,11 @@ public class CreateNewProject : Commands{
             if (type == "Programming"){
             Programming project = new Programming(name, description, newStartDate, newEndDate);
             bin.AddToList(project);
+            terminal.WriteMessage("Project added.");
         }else if (type == "Sewing"){
             Sewing project = new Sewing(name, description, newStartDate, newEndDate);
             bin.AddToList(project);
+            terminal.WriteMessage("Project added.");
         }
         }
 

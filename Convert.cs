@@ -22,6 +22,9 @@ public class Convert{
         // Displays the following output on a system whose culture is en-US:
         //       1/1/2009 00:00:00
         date = terminal.ReadDate();
+        if (date == ""){
+            date = "";
+        }
         DateTime changedDate = DateTime.Parse(date);
         return changedDate;
     }
