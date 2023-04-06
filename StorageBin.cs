@@ -8,4 +8,15 @@ public class StorageBin{
     public List<Project> GetProjects(){
         return _projects;
     }
+
+    public void AddToList(Project project){
+        _projects.Add(project);
+    }
+    
+    public void DisplayProjects(){
+        Terminal terminal = new Terminal();
+        foreach (Project p in _projects){
+            terminal.WriteMessage(p);
+        }
+    }
 }

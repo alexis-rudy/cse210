@@ -3,7 +3,6 @@ public class Program{
         Terminal terminal = new Terminal();
 
         terminal.WelcomeMessage();
-        int response = terminal.ReadInt();
     }
 
 }

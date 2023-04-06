@@ -16,8 +16,8 @@ public class Project{
     private bool _completed = false;
 
     // Constructors
-    public Project(string name, string description, string startDate, string endDate){}
-    public Project(string description, string startDate, string endDate){}
+    public Project(string name, string description, DateTime startDate, DateTime endDate){}
+    public Project(string description, DateTime startDate, DateTime endDate){}
     public Project(string name, string description){}
     public Project(string description){}
     public Project(){}
